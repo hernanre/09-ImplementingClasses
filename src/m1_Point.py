@@ -79,8 +79,6 @@ class Point(object):
         hypotenuse = self.get_distance_from(p1)
         self.distance = self.distance + hypotenuse
 
-
-
     def get_number_of_moves_made(self):
         return self.move_made
 
@@ -106,9 +104,7 @@ class Point(object):
     def halfway_to(self, p2):
         middle_x = (self.x + p2.x) / 2
         middle_y = (self.y + p2.y) / 2
-
         middle = Point(middle_x, middle_y)
-
         return middle
 
 def run_test_init():
